@@ -1,0 +1,133 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vivez l'experience !{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Styles pour la bannière */
+.banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 0;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Contenu principal */
+main {
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services {
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    color: #007BFF;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+
+<div class="example-wrapper">
+    <h1>Vivez l'experience !</h1>
+
+</div>
+<div class="banner">
+    <img src="https://www.groupement-flo.com/uploads/companydirectory/id73/SITRANS-Logistique_C.png" alt="Bannière Sitrans" class="banner-img">
+</div
+<nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/about">À propos</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+</nav>
+<div class="welcome">
+Accueil
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+</div>
+
+{% endblock %}
